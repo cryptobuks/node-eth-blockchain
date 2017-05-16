@@ -42,14 +42,14 @@ function sendRaw(rawTx) {
         });
 }
 
-// Deploy the ballot smart contract
+// Deploy the ballot smart contract - done so commented out
 /////////////////////////////////////////////////////////////////////////////////////////////////
-var rawTx = {
-    nonce: web3.toHex(web3.eth.getTransactionCount(address)),
-    gasLimit: web3.toHex(800000),
-    gasPrice: web3.toHex(20000000000),
-    data: '0x' + bytecode + '0000000000000000000000000000000000000000000000000000000000000005'
-};
+// var rawTx = {
+//     nonce: web3.toHex(web3.eth.getTransactionCount(address)),
+//     gasLimit: web3.toHex(800000),
+//     gasPrice: web3.toHex(20000000000),
+//     data: '0x' + bytecode + '0000000000000000000000000000000000000000000000000000000000000005'
+// };
 
 // Construct a transaction to vote on proposal 4
 /////////////////////////////////////////////////////////////////////////////////////////////////
